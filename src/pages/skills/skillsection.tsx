@@ -39,7 +39,7 @@ export function SkillSection({ category }: { category: SkillCategory }) {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4">
+      <div className=" grid grid-cols-1 gap-4">
         {category.skills.map((skill) => (
           <SkillCard key={skill.name} skill={skill} />
         ))}

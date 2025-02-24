@@ -96,33 +96,33 @@ export const skillCategories: SkillCategory[] = [
         tools: [
           {
             tool: "React.js",
-           icon: <RiReactjsFill size={16} />,
+            icon: <RiReactjsFill size={22} />,
             // icon: null,
           },
           {
             tool: "Next.js",
-           icon: <SiNextdotjs size={16} />,
-          //   icon: null,
+            icon: <SiNextdotjs size={22} />,
+            //   icon: null,
           },
           {
             tool: "JavaScript",
-           icon: <RiJavascriptFill size={16} />,
-         //    icon: null,
+            icon: <RiJavascriptFill size={22} />,
+            //    icon: null,
           },
           {
             tool: "TypeScript",
-            icon: <BiLogoTypescript size={16} />,
-           // icon: null,
+            icon: <BiLogoTypescript size={22} />,
+            // icon: null,
           },
           {
             tool: "React Query",
-           icon: <SiReactquery size={16} />,
-          //   icon: null,
+            icon: <SiReactquery size={22} />,
+            //   icon: null,
           },
           {
             tool: "React form hook",
-           icon: <SiReacthookform size={16} />,
-         //   icon: null,
+            icon: <SiReacthookform size={22} />,
+            //   icon: null,
           },
         ],
       },
@@ -135,44 +135,46 @@ export const skillCategories: SkillCategory[] = [
           {
             tool: "HTML5",
             icon: <SiHtml5 size={18} />,
-           // icon: null,
+            // icon: null,
           },
           {
             tool: "CSS3",
-           icon: <SiCss3 size={18} />,
-          //   icon: null,
+            icon: <SiCss3 size={18} />,
+            //   icon: null,
           },
           {
             tool: "Tailwind CSS",
-           icon: <SiTailwindcss size={18} />,
-           //  icon: null,
+            icon: <SiTailwindcss size={18} />,
+            //  icon: null,
           },
           {
             tool: "Hero UI ( Next UI )",
             icon: <SiNextui size={18} />,
-           // icon: null,
+            // icon: null,
           },
           {
             tool: "Shadcn/UI",
             icon: <SiShadcnui size={18} />,
-          //  icon: null,
+            //  icon: null,
           },
           {
             tool: "Magic UI",
-           icon: <FaMagic size={18} />,
-           //  icon: null,
+            icon: <FaMagic size={18} />,
+            //  icon: null,
           },
           {
             tool: "aceternity UI",
             icon: <AceternityLogo />,
-           // icon: null,
+            // icon: null,
           },
         ],
       },
     ],
   },
   {
-    title: "Backend & Database",
+    // title: "Backend & Database",
+    title: "Backend Development",
+
     icon: <Database className="w-6 h-6 text-[hsl(var(--primary))]" />,
     description: "Designing and implementing server-side solutions",
     skills: [
@@ -184,23 +186,23 @@ export const skillCategories: SkillCategory[] = [
         tools: [
           {
             tool: "PostgreSQL ",
-           // icon: null,
-            icon: <SiPostgresql size={18} />
+            // icon: null,
+            icon: <SiPostgresql size={18} />,
           },
           {
             tool: "pgAdmin ",
-          //  icon: null,
-            
-    icon: <SiPostgresql size={18} />
+            //  icon: null,
+
+            icon: <SiPostgresql size={18} />,
           },
           {
             tool: "SQL",
-           //icon: null,
-            icon: <Terminal size={18} />
+            //icon: null,
+            icon: <Terminal size={18} />,
           },
           {
             tool: "Database Design",
-           // icon: null,
+            // icon: null,
             icon: <CiDatabase size={18} />,
           },
         ],
@@ -212,18 +214,18 @@ export const skillCategories: SkillCategory[] = [
         tools: [
           {
             tool: "Node.js",
-           // icon: null,
-            icon: <SiNodedotjs size={18} />
+            // icon: null,
+            icon: <SiNodedotjs size={18} />,
           },
           {
             tool: "Express.js",
-           // icon: null,
-            icon: <SiExpress size={18} />
+            // icon: null,
+            icon: <SiExpress size={18} />,
           },
           {
             tool: "REST APIs",
-          //   icon: null,
-           icon: <Globe size={18} />
+            //   icon: null,
+            icon: <Globe size={18} />,
           },
         ],
       },
@@ -241,13 +243,13 @@ export const skillCategories: SkillCategory[] = [
         tools: [
           {
             tool: "Git",
-           // icon: null,
-            icon: <SiGit size={18} />
+            // icon: null,
+            icon: <SiGit size={18} />,
           },
           {
             tool: "GitHub",
-           // icon: null,
-            icon: <SiGithub size={18} />
+            // icon: null,
+            icon: <SiGithub size={18} />,
           },
         ],
       },
@@ -260,14 +262,13 @@ export const skillCategories: SkillCategory[] = [
           {
             tool: "VS Code",
             //  icon: null,
-          icon:<VscVscode size={18} />
-              
+            icon: <VscVscode size={18} />,
           },
           {
             tool: "npm",
-           // icon: null,
-            icon: <Server size={18} /> 
-           },
+            // icon: null,
+            icon: <Server size={18} />,
+          },
         ],
       },
     ],

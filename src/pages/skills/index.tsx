@@ -1,33 +1,9 @@
 
 "use client";
 import React from 'react'
-import { Tabs, Tab,  } from "@heroui/react";
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
+import { Tabs, Tab } from "@heroui/react";
 import { SkillSection } from "@/pages/skills/skillsection";
 import { skillCategories } from "@/pages/skills/data";
-// import {
-//   Code2,
-//   Layout,
-//   Database,
-//   Terminal,
-//   GitBranch,
-//   Globe,
-//   Blocks,
-//   Cpu,
-//   Server,
-//   Layers,
-//   Palette,
-//   Wrench,
-// } from "lucide-react";
-
-
 
 export default function Skills() {
   return (
@@ -43,20 +19,14 @@ export default function Skills() {
       </div>
 
       <div className="">
-        <Tabs
-          aria-label="Options"
-          placement="top"
-          className="w-[900px] "
-        >
+        <Tabs aria-label="Options" placement="top" className="w-[900px] ">
           {skillCategories.map((category) => (
             <Tab
               key={category.title}
               title={category.title}
               className="w-[900px] "
             >
-              {/* <Card className="w-[900px]"> */}
-                  <SkillSection key={category.title} category={category}/>
-              {/* </Card> */}
+              <SkillSection key={category.title} category={category} />
             </Tab>
           ))}
         </Tabs>
