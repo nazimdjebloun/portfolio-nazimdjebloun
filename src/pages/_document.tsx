@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" className={` bg-background`}>
       <Head>
-        <title>Nazim portfolio</title>
+        {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
         <meta
           name="portfolio"
           content="This is the portfolio page of nazim djebloun "

@@ -32,19 +32,19 @@ import {
   SiShadcnui,
   SiCss3,
   SiReacthookform,
+  SiAxios,
+  SiPostman,
 } from "react-icons/si";
 import { FaMagic } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { CiDatabase } from "react-icons/ci";
-import { RiJavascriptFill,  } from "react-icons/ri";
+import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-
 
 interface tools {
   tool: string;
   icon: React.ReactNode;
 }
-
 
 interface SkillDetail {
   name: string;
@@ -59,9 +59,7 @@ interface SkillCategory {
   skills: SkillDetail[];
 }
 
-
-
-const AceternityLogo = () => {
+export const AceternityLogo = () => {
   return (
     <svg
       width="66"
@@ -132,16 +130,16 @@ export const skillCategories: SkillCategory[] = [
           "Creating beautiful and responsive interfaces with modern CSS frameworks and building reusable and accessible UI components",
         // tools: ["Tailwind CSS", "Shadcn/UI", "Hero UI", "CSS3", "HTML5"],
         tools: [
-          {
-            tool: "HTML5",
-            icon: <SiHtml5 size={18} />,
-            // icon: null,
-          },
-          {
-            tool: "CSS3",
-            icon: <SiCss3 size={18} />,
-            //   icon: null,
-          },
+          // {
+          //   tool: "HTML5",
+          //   icon: <SiHtml5 size={18} />,
+          //   // icon: null,
+          // },
+          // {
+          //   tool: "CSS3",
+          //   icon: <SiCss3 size={18} />,
+          //   //   icon: null,
+          // },
           {
             tool: "Tailwind CSS",
             icon: <SiTailwindcss size={18} />,
@@ -223,9 +221,19 @@ export const skillCategories: SkillCategory[] = [
             icon: <SiExpress size={18} />,
           },
           {
+            tool: "AXIOS",
+            //   icon: null,
+            icon: <SiAxios size={18} />,
+          },
+          {
             tool: "REST APIs",
             //   icon: null,
             icon: <Globe size={18} />,
+          },
+          {
+            tool: "Postman",
+            //   icon: null,
+            icon: <SiPostman size={18} />,
           },
         ],
       },

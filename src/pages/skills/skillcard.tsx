@@ -18,21 +18,19 @@ interface SkillDetail {
 // bg - zinc - 700;
 export function SkillCard({ skill }: { skill: SkillDetail }) {
   return (
-    <div className="border-1 border-borderaccent p-4 rounded-2xl hover:shadow-lg  transition-all duration-300 ">
-      <h4 className="text-lg font-semibold text-[hsl(var(--foreground))] mb-2">
+    <div className="border-1  dark:border-borderaccent p-4 rounded-2xl hover:shadow-lg  transition-all duration-300 ">
+      <h4 className="text-sm md:text-xl font-semibold text-[hsl(var(--foreground))]   mb-2">
         {skill.name}
       </h4>
-      <p className="text-[hsl(var(--muted-foreground))] mb-3 text-sm">
+      <p className="text-sm text-[hsl(var(--muted-foreground))] mb-3">
         {skill.description}
       </p>
       <div className="flex flex-wrap gap-2">
         {skill.tools.map((tool) => (
           <div key={tool.tool}>
-
-
-            <div className="border-1 border-borderaccent  bg-accent group inline-block h-[fit] w-[40px] overflow-hidden rounded-full cursor-pointer shadow-lg hover:w-[180px] min-w-[fit] hover:-[160px]transition-[width,transform,shadow] duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:shadow-xl hover:scale-105">
+            <div className="border-1 dark:border-borderaccent  bg-accent group inline-block h-[fit] w-[40px] overflow-hidden rounded-full cursor-pointer shadow-lg hover:w-[180px] min-w-[fit]   hover:-[160px]transition-[width,transform,shadow] duration-300 hover:shadow-xl hover:scale-105">
               <div className=" flex items-center h-full w-full rounded-full ">
-                <div className=" rounded-full bg-secondary flex-shrink-0 flex items-center justify-center w-[40px] h-[40px] transition-transform duration-300 group-hover:scale-100">
+                <div className=" rounded-full bg-secondary flex-shrink-0 flex items-center justify-center size-[40px] transition-transform duration-300 group-hover:scale-100">
                   {tool.icon}
                 </div>
                 <span className="px-2 opacity-0 text-[15px] font-medium whitespace-nowrap transform translate-x-[-10px] transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
