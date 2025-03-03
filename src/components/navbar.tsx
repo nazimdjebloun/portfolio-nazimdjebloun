@@ -31,6 +31,10 @@ export default function Navbar() {
       navLink: "/projects",
     },
     {
+      navName: "Experience",
+      navLink: "/experience",
+    },
+    {
       navName: "Contact",
       navLink: "/contact",
     },

@@ -1,9 +1,7 @@
 
 "use client";
 import React from 'react'
-// import { Badge } from "@/components/ui/badge";
-// import { cn } from "@/lib/utils";
-// import { StarBorder } from "@/components/ui/star-border";
+
 
 interface tools {
   tool: string;
@@ -25,11 +23,11 @@ export function SkillCard({ skill }: { skill: SkillDetail }) {
       <p className="text-sm text-[hsl(var(--muted-foreground))] mb-3">
         {skill.description}
       </p>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex md:flex-wrap gap-2 ">
         {skill.tools.map((tool) => (
-          <div key={tool.tool}>
-            <div className="border-1 dark:border-borderaccent  bg-accent group inline-block h-[fit] w-[40px] overflow-hidden rounded-full cursor-pointer shadow-lg hover:w-[180px] min-w-[fit]   hover:-[160px]transition-[width,transform,shadow] duration-300 hover:shadow-xl hover:scale-105">
-              <div className=" flex items-center h-full w-full rounded-full ">
+          <div key={tool.tool} className="box-border">
+            <div className=" border-1 dark:border-borderaccent  bg-accent group inline-block h-[fit] w-[40px] overflow-hidden rounded-full cursor-pointer shadow-lg hover:w-[180px] min-w-[fit]   hover:-[160px]transition-[width,transform,shadow] duration-300 hover:shadow-xl hover:scale-105">
+              <div className=" flex  items-center h-full w-full rounded-full ">
                 <div className=" rounded-full bg-secondary flex-shrink-0 flex items-center justify-center size-[40px] transition-transform duration-300 group-hover:scale-100">
                   {tool.icon}
                 </div>
@@ -49,33 +47,3 @@ export function SkillCard({ skill }: { skill: SkillDetail }) {
 
 
 
-            // <div>
-            //   <StarBorder className="">
-            //     <div className="flex gap-2 p-0 m-0">
-            //       <span className="text-sm">{tool.icon}</span>
-            //       <span className="text-sm">{tool.tool}</span>
-            //     </div>
-            //   </StarBorder>
-            // </div>;
-
-
-            // <Badge className="group  p-2 rounded-2xl border-accent-foreground gap-2 bg-accent text-card-fourground hover:bg-background">
-            //   <span className="text-sm">{tool.icon}</span>
-            //   <span className="hidden group-hover:inline-block ">
-            //     {tool.tool}
-            //   </span>
-            // </Badge>;
-
-
-            // <div
-            //   className={` group inline-block h-[40px] w-[40px] overflow-auto  rounded-full cursor-pointer shadow-xl  hover:w-fit`}
-            // >
-            //   <div className={`flex items-center h-full w-full rounded-full `}>
-            //     <span className="rounded-full flex justify-center items-center w-[40px] h-[40px] ">
-            //       {tool.icon}
-            //     </span>
-            //     <span className="px-3 hidden text-[15px] font-medium whitespace-nowrap  group-hover:inline-block">
-            //       {tool.tool}
-            //     </span>
-            //   </div>
-            // </div>;

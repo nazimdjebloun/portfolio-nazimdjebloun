@@ -14,7 +14,6 @@ import {
   useDisclosure,
 } from "@heroui/react";
 
-import { Lens } from "@/components/magicui/lens";
 
 
 interface Stack {

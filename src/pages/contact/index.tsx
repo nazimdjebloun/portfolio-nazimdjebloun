@@ -1,29 +1,16 @@
-// import React from "react";
-import { AnimatedGradientTextDemo } from "./test";
-
-// export default function Contact() {
-//   return (
-//     <div className="py-40 flex flex-col justify-center items-center">
-//       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center text-5xl md:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-//         Contact Me
-//       </span>
-//       <div className="w-64 py-20">
-//         <AnimatedGradientTextDemo />
-//       </div>
-//     </div>
-//   );
-// }
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { useState } from "react";
 import { Send, Check, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { MagicCard } from "@/components/magicui/magic-card";
+import { useTheme } from "next-themes";
 export default function ContactPage() {
   const openEmail = () => {
     window.location.href = "mailto:djeblounnazim2@gmail.com";
   };
-
+  const { theme } = useTheme();
   return (
     <div className="py-40 min-h-screen bg-gradient-to-b from-background to-background/80  px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -75,7 +62,6 @@ export default function ContactPage() {
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
           </motion.div>
-
           {/* linkedin Info & Links */}
           <motion.div
             initial={{ opacity: 0, x: -20, scale: 0.9 }}

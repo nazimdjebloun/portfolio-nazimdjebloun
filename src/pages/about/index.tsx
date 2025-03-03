@@ -3,21 +3,28 @@ import { MorphingText } from "@/components/magicui/morphing-text";
 import { GradientText } from "@/components/ui/gradient-text";
 import { TimelineDemo } from "./education"
 import { Description } from './description';
+import { motion } from "framer-motion";
 
 export default function index() {
   const texts = [
     "Digital Experiences",
     "Robust systems solutions",
     "Inoovative ideas",
-
   ];
   return (
     <div className="py-40 ">
-      <Description />
+      {/* <Description /> */}
       <div className="flex justify-center flex-col">
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center text-5xl md:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-          Education
-        </span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center flex flex-col justify-center items-center"
+        >
+          <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center text-5xl md:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            Education
+          </span>
+        </motion.div>
         <div className="bg-background">
           <TimelineDemo />
         </div>

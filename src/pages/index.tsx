@@ -26,6 +26,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { GradientText } from "@/components/ui/gradient-text";
 import { motion } from "framer-motion";
+import { Description } from "@/pages/about/description";
 
 export default function Home() {
   const stack = [
@@ -39,7 +40,7 @@ export default function Home() {
     "Expresse js",
   ];
   return (
-    <div className="py-40 h-dvh flex flex-col gap-7">
+    <div className="py-40 flex flex-col gap-7">
       <BackgroundBeams />
 
       <div className="flex flex-col justify-center items-center gap-11">
@@ -59,21 +60,31 @@ export default function Home() {
       </div>
 
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden ">
-        <OrbitingCircles radius={150}>
-          <RiReactjsFill size={200} />
-          <RiJavascriptFill size={200} />
-          <SiNextdotjs size={200} />
-          <SiTypescript size={200} />
-          <SiNodedotjs size={200} />
-          <SiExpress size={200} />
-          <SiPostgresql size={200} />
-        </OrbitingCircles>
-        <OrbitingCircles radius={80} reverse speed={2}>
-          <VscVscode size={100} />
-          <SiTailwindcss size={100} />
-          <CiDatabase size={100} />
-          <SiGithub size={100} />
-        </OrbitingCircles>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center flex flex-col justify-center items-center"
+        >
+          <OrbitingCircles radius={150}>
+            <RiReactjsFill size={200} />
+            <RiJavascriptFill size={200} />
+            <SiNextdotjs size={200} />
+            <SiTypescript size={200} />
+            <SiNodedotjs size={200} />
+            <SiExpress size={200} />
+            <SiPostgresql size={200} />
+          </OrbitingCircles>
+          <OrbitingCircles radius={80} reverse speed={2}>
+            <VscVscode size={100} />
+            <SiTailwindcss size={100} />
+            <CiDatabase size={100} />
+            <SiGithub size={100} />
+          </OrbitingCircles>
+        </motion.div>
+      </div>
+      <div className="">
+        <Description />
       </div>
     </div>
   );

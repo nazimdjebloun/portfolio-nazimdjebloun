@@ -82,7 +82,9 @@ export const AceternityLogo = () => {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend Development",
+    // title: "Frontend Development",
+    title: "Frontend",
+
     icon: <Layout className="w-6 h-6 text-[hsl(var(--primary))]" />,
     description: "Building responsive and interactive user interfaces",
     skills: [
@@ -171,7 +173,8 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     // title: "Backend & Database",
-    title: "Backend Development",
+    // title: "Backend Development",
+    title: "Backend",
 
     icon: <Database className="w-6 h-6 text-[hsl(var(--primary))]" />,
     description: "Designing and implementing server-side solutions",
@@ -240,7 +243,9 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Development Tools",
+    // title: "Development Tools",
+    title: "Dev Tools",
+
     icon: <Wrench className="w-6 h-6 text-[hsl(var(--primary))]" />,
     description: "Utilizing modern development tools and practices",
     skills: [

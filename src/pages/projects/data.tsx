@@ -31,6 +31,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import portfolio from "../../../public/images/projects/portfolio/potfolio.png";
 import education from "../../../public/images/projects/portfolio/education.png";
 import skills from "../../../public/images/projects/portfolio/skills.png";
+import contact from "../../../public/images/projects/portfolio/contact.png";
 
 import { Images } from "lucide-react";
 // import add from "@/public/images/projects/todolist/add.png";
@@ -40,19 +41,17 @@ import view from "../../../public//images/projects/todolist/view.png";
 import edit from "../../../public//images/projects/todolist/edit.png";
 import SimpleToDoList from "../../../public//images/projects/todolist/SimpleToDoList.png";
 
-
-
 const projects = [
   {
-    images: [portfolio.src, education.src, skills.src],
+    images: [portfolio.src, education.src, skills.src, contact.src],
 
     title: "Portfolio",
     description:
       " A modern, responsive portfolio showcasing my journey, skills, and how to get in touch",
-   
+
     details: {
       overview:
-       "A portfolio where you will find insights about my educational background, technical skills, and how to reach me",
+        "A portfolio where you will find insights about my educational background, technical skills, and how to reach me",
       features: [
         { name: "Home section" },
         { name: "About section with a brief intro and an education journey" },

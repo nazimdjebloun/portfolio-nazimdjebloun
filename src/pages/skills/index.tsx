@@ -37,13 +37,13 @@ export default function Skills() {
         <Tabs
           aria-label="Options"
           placement="top"
-          className="w-[500px] md:w-[750px] lg:w-[900px] mx-auto overflow-"
+          className="w-[320px] md:w-[750px] lg:w-[900px] mx-auto overflow-"
         >
           {skillCategories.map((category) => (
             <Tab
               key={category.title}
               title={category.title}
-              className="w-[500px] md:w-[750px] lg:w-[900px] mx-auto "
+              className="w-[320px] md:w-[750px] lg:w-[900px] mx-auto "
             >
               <SkillSection key={category.title} category={category} />
             </Tab>

@@ -30,9 +30,9 @@ export function SkillSection({ category }: { category: SkillCategory }) {
     //   color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
     // >
     <ShineBorder
-      className="rounded-xl p-0  w-[500px] md:w-[750px] lg:w-[900px] mx-auto"
-      // color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-      color={theme.theme === "dark" ? "white" : "black"}
+      className="rounded-xl p-0  w-[320px] md:w-[750px] lg:w-[900px] mx-auto"
+      color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+      // color={theme.theme === "dark" ? "white" : "black"}
     >
       <div className="bg-secondary  rounded-xl p-6 ">
         <div className="flex items-center gap-3 mb-4">
