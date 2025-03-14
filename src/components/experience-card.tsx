@@ -19,8 +19,8 @@ export function ExperienceCard({
   description,
   achievements,
   skills,
-  companyLogo,
-}: ExperienceCardProps) {
+}: // companyLogo,
+ExperienceCardProps) {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (

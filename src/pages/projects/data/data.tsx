@@ -1,7 +1,7 @@
 
 
 import { RiReactjsFill } from "react-icons/ri";
- import { AceternityLogo } from "@/pages/skills/data";
+ import { AceternityLogo } from "@/pages/skills/data/data";
  import {
    SiNextdotjs,
    // SiTypescript,
@@ -25,17 +25,17 @@ import { RiReactjsFill } from "react-icons/ri";
  import { RiJavascriptFill } from "react-icons/ri";
  import { BiLogoTypescript } from "react-icons/bi";
 
- import portfolio from "../../../public/images/projects/portfolio/potfolio.png";
- import education from "../../../public/images/projects/portfolio/education.png";
- import skills from "../../../public/images/projects/portfolio/skills.png";
- import contact from "../../../public/images/projects/portfolio/contact.png";
+ import portfolio from "@public/images/projects/portfolio/potfolio.png";
+ import education from "@public/images/projects/portfolio/education.png";
+ import skills from "@public/images/projects/portfolio/skills.png";
+ import contact from "@public/images/projects/portfolio/contact.png";
 
 // import add from "@/public/images/projects/todolist/add.png";
-import add from "../../../public/images/projects/todolist/add.png";
-import deleteTask from "../../../public//images/projects/todolist/deleteTask.png";
-import view from "../../../public//images/projects/todolist/view.png";
-import edit from "../../../public//images/projects/todolist/edit.png";
-import SimpleToDoList from "../../../public//images/projects/todolist/SimpleToDoList.png";
+import add from "@public//images/projects/todolist/add.png";
+import deleteTask from "@public/images/projects/todolist/deleteTask.png";
+import view from "@public/images/projects/todolist/view.png";
+import edit from "@public/images/projects/todolist/edit.png";
+import SimpleToDoList from "@public/images/projects/todolist/SimpleToDoList.png";
 
 const projects = [
   {

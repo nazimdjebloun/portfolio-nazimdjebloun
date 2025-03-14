@@ -21,7 +21,7 @@ export default function ContactPage() {
             Get in touch
           </span>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto py-5">
-            I'm always open to new opportunities, collaborations, or just a
+            I&apos;m always open to new opportunities, collaborations, or just a
             friendly chat. Feel free to reach out through the form below or
             connect with me on social media.
           </p>
@@ -73,7 +73,7 @@ export default function ContactPage() {
           >
             <h2 className="text-2xl font-semibold mb-4">Connect on LinkedIn</h2>
             <p className="text-muted-foreground mb-4">
-              Let's network and discuss new opportunities.
+              Let&apos;s network and discuss new opportunities.
             </p>
             <a
               href="https://www.linkedin.com/in/nazim-djebloun/"

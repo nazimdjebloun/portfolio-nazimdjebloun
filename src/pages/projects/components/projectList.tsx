@@ -1,6 +1,6 @@
 import React from "react";
 import { ProjectCard } from "./projectCard";
-import projects from "./data";
+import projects from "../data/data";
 
 export default function ProjectList() {
   return (

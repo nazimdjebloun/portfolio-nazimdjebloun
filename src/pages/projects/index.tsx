@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectList from "./projectList";
+import ProjectList from "./components/projectList";
 import { motion } from "framer-motion";
 
 export default function Projects() {

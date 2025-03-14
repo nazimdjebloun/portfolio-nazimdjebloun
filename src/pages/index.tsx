@@ -24,7 +24,7 @@ import { CiDatabase } from "react-icons/ci";
 import { RiJavascriptFill } from "react-icons/ri";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { motion } from "framer-motion";
-import { Description } from "@/pages/about/description";
+import { Description } from "@/components/description";
 import DownloadResume from "@/components/downloadResume";
 
 export default function Home() {

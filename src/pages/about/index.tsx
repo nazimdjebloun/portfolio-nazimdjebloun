@@ -1,5 +1,5 @@
 import React from 'react'
-import { TimelineDemo } from "./education";
+import { TimelineDemo } from "./components/education";
 import { motion } from "framer-motion";
 
 export default function index() {
