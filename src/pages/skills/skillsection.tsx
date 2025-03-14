@@ -3,7 +3,7 @@
 import React from 'react'
 import { SkillCard } from "@/pages/skills/skillcard";
 import { ShineBorder } from "@/components/magicui/shine-border";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 interface tools {
   tool: string;
   icon: React.ReactNode;
@@ -23,7 +23,7 @@ interface SkillCategory {
 }
 
 export function SkillSection({ category }: { category: SkillCategory }) {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     // <ShineBorder
     //   className="relative rounded-xl p-0"

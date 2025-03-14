@@ -4,13 +4,13 @@ import React from 'react'
 import { Tabs, Tab } from "@heroui/react";
 import { SkillSection } from "@/pages/skills/skillsection";
 import { skillCategories } from "@/pages/skills/data";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 //import { Meteors } from "@/components/magicui/meteors";
 //import { AuroraBackground } from "@/components/ui/aurora-background";
 export default function Skills() {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <div className="flex flex-col justify-center items-center content-center py-40 ">
       {/* <Skillsbackground /> */}

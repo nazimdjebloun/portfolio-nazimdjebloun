@@ -22,7 +22,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <title>Nazim portfolio</title>
       </Head>
-      <div className={`bg-background ${geistSans.className}`}>
+      <div
+        className={`bg-background ${geistSans.className} ${geistMono.className}`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
