@@ -1,7 +1,7 @@
 import { AuroraText } from "@/components/magicui/aurora-text";
 // import { useTheme } from "next-themes";
 // import { MagicCard } from "@/components/magicui/magic-card";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -30,7 +30,7 @@ import { Description } from "@/components/description";
 export default function Home() {
   return (
     <div className="py-40 flex flex-col gap-7">
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
 
       <div className="flex flex-col justify-center items-center gap-11">
         <motion.div
