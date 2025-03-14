@@ -20,8 +20,8 @@ export  function Description() {
               </h1> */}
 
         <div className=" py-40 px-10  pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center md:text-2xl/8 sm:text-xl/8  text-transparent dark:from-white dark:to-slate-900/10">
-          I'm a full-stack software developer passionate about turning ideas
-          into
+          I&apos;m a full-stack software developer passionate about turning
+          ideas into
           <GradientText
           // colors={["foreground", "zinc-700", "purple-500"]}
           >
@@ -58,7 +58,7 @@ export  function Description() {
           >
             enthusiasm and dedication.
           </GradientText>
-          I'm committed
+          I&apos;m committed
           <GradientText
           // colors={["foreground", "zinc-700", "purple-500"]}
           >
