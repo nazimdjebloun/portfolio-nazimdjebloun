@@ -1,6 +1,6 @@
 import React from 'react'
 import { ExperienceCard } from "../../components/experience-card";
-import { experiences } from "./data/data";
+import { experiences } from "../../components/experiecne/data/data";
 import { motion } from "framer-motion";
 
 export default function Experience() {

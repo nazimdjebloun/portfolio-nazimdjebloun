@@ -25,7 +25,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { motion } from "framer-motion";
 import { Description } from "@/components/description";
-import DownloadResume from "@/components/downloadResume";
+// import DownloadResume from "@/components/downloadResume";
 
 export default function Home() {
   return (
@@ -75,7 +75,7 @@ export default function Home() {
       <div className="">
         <Description />
       </div>
-      <DownloadResume />
+      {/* <DownloadResume /> */}
     </div>
   );
 }

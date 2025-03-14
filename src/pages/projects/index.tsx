@@ -1,6 +1,6 @@
-import React from 'react'
-import ProjectList from "./components/projectList";
+import React from "react";
 import { motion } from "framer-motion";
+import ProjectList from "@/components/projects/components/projectList";
 
 export default function Projects() {
   return (

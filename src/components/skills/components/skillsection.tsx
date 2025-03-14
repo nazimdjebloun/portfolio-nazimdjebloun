@@ -1,7 +1,7 @@
 
 "use client";
 import React from 'react'
-import { SkillCard } from "@/pages/skills/components/skillcard";
+import { SkillCard } from "./skillcard";
 import { ShineBorder } from "@/components/magicui/shine-border";
 // import { useTheme } from "next-themes";
 interface tools {

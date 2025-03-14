@@ -2,8 +2,8 @@
 "use client";
 import React from 'react'
 import { Tabs, Tab } from "@heroui/react";
-import { SkillSection } from "@/pages/skills/components/skillsection";
-import { skillCategories } from "@/pages/skills/data/data";
+import { SkillSection } from "@/components/skills/components/skillsection";
+import { skillCategories } from "@/components/skills/data/data";
 // import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 

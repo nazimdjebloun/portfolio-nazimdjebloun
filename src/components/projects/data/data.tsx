@@ -1,7 +1,7 @@
 
 
 import { RiReactjsFill } from "react-icons/ri";
- import { AceternityLogo } from "@/pages/skills/data/data";
+ import { AceternityLogo } from "@/components/skills/data/data";
  import {
    SiNextdotjs,
    // SiTypescript,
