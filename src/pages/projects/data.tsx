@@ -1,39 +1,35 @@
 
 
 import { RiReactjsFill } from "react-icons/ri";
- import {AceternityLogo} from "@/pages/skills/data";
-import { Code, Database, Globe, Server } from 'lucide-react';
+ import { AceternityLogo } from "@/pages/skills/data";
+ import {
+   SiNextdotjs,
+   // SiTypescript,
+   SiPostgresql,
+   SiExpress,
+   SiNodedotjs,
+   // SiGit,
+   SiReactquery,
+   // SiGithub,
+   SiTailwindcss,
+   SiNextui,
+   // SiHtml5,
+   SiShadcnui,
+   // SiCss3,
+   // SiReacthookform,
+   SiAxios,
+   // SiPostman,
+ } from "react-icons/si";
+ import { FaMagic } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiPostgresql,
-  SiExpress,
-  SiNodedotjs,
-  SiGit,
-  SiReactquery,
-  SiGithub,
-  SiTailwindcss,
-  SiNextui,
-  SiHtml5,
-  SiShadcnui,
-  SiCss3,
-  SiReacthookform,
-  SiAxios,
-  SiPostman,
-} from "react-icons/si";
-import { FaMagic } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
-import { CiDatabase } from "react-icons/ci";
-import { RiJavascriptFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
+ import { RiJavascriptFill } from "react-icons/ri";
+ import { BiLogoTypescript } from "react-icons/bi";
 
-import portfolio from "../../../public/images/projects/portfolio/potfolio.png";
-import education from "../../../public/images/projects/portfolio/education.png";
-import skills from "../../../public/images/projects/portfolio/skills.png";
-import contact from "../../../public/images/projects/portfolio/contact.png";
+ import portfolio from "../../../public/images/projects/portfolio/potfolio.png";
+ import education from "../../../public/images/projects/portfolio/education.png";
+ import skills from "../../../public/images/projects/portfolio/skills.png";
+ import contact from "../../../public/images/projects/portfolio/contact.png";
 
-import { Images } from "lucide-react";
 // import add from "@/public/images/projects/todolist/add.png";
 import add from "../../../public/images/projects/todolist/add.png";
 import deleteTask from "../../../public//images/projects/todolist/deleteTask.png";

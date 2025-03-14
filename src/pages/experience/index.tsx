@@ -19,7 +19,7 @@ export default function Experience() {
             </span>
 
             <p className="text-center text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto py-5">
-              My professional journey in design and development
+              My professional journey
             </p>
           </div>
         </motion.div>

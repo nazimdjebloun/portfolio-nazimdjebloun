@@ -1,10 +1,6 @@
-import React from 'react'
-import { GlowingEffect } from "@/components/ui/glowing-effect";
+import React from "react";
 import { ProjectCard } from "./projectCard";
-import Image from "next/image";
 import projects from "./data";
-
-
 
 export default function ProjectList() {
   return (

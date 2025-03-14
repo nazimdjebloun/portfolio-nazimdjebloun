@@ -3,8 +3,7 @@ import { motion, useMotionValue } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
-import Image, { StaticImageData } from "next/image";
+import { Button } from "@/components/ui/button";
 import {
   Modal,
   ModalContent,

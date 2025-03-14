@@ -1,10 +1,8 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import  {Button}  from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { ImageSwiper } from "@/components/ui/image-swiper";
 import { Divider } from "@heroui/react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // Import icons
 import {
   Modal,
   ModalContent,
@@ -13,8 +11,6 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@heroui/react";
-
-
 
 interface Stack {
   name: string;
@@ -41,8 +37,8 @@ export function ProjectCard({
   details,
   stack,
 }: ProjectCardProps) {
-    const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <li className=" group">
       <div className="bg-background border relative h-full rounded-xl p-2">

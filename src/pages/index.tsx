@@ -1,5 +1,5 @@
 import { AuroraText } from "@/components/magicui/aurora-text";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 // import { MagicCard } from "@/components/magicui/magic-card";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import {
@@ -8,37 +8,26 @@ import {
   SiPostgresql,
   SiExpress,
   SiNodedotjs,
-  SiGit,
-  SiReactquery,
+  // SiGit,
+  // SiReactquery,
   SiGithub,
   SiTailwindcss,
-  SiNextui,
-  SiHtml5,
-  SiShadcnui,
-  SiCss3,
-  SiReacthookform,
+  // SiNextui,
+  // SiHtml5,
+  // SiShadcnui,
+  // SiCss3,
+  // SiReacthookform,
 } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
-import { FaMagic } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { CiDatabase } from "react-icons/ci";
 import { RiJavascriptFill } from "react-icons/ri";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
-import { GradientText } from "@/components/ui/gradient-text";
 import { motion } from "framer-motion";
 import { Description } from "@/pages/about/description";
+import DownloadResume from "@/components/downloadResume";
 
 export default function Home() {
-  const stack = [
-    "Next JS",
-    "React JS",
-    "Javascript ",
-    "TypeScript",
-    "Tailwind",
-    "PostgresSQL",
-    "Node JS",
-    "Expresse js",
-  ];
   return (
     <div className="py-40 flex flex-col gap-7">
       <BackgroundBeams />
@@ -86,6 +75,7 @@ export default function Home() {
       <div className="">
         <Description />
       </div>
+      <DownloadResume />
     </div>
   );
 }

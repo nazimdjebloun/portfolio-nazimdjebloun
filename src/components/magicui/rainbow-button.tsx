@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Send, Check, Loader2 } from "lucide-react";
+import { Send } from "lucide-react";
 
 interface RainbowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}

@@ -1,16 +1,9 @@
 import React from 'react'
-import { MorphingText } from "@/components/magicui/morphing-text";
-import { GradientText } from "@/components/ui/gradient-text";
-import { TimelineDemo } from "./education"
-import { Description } from './description';
+import { TimelineDemo } from "./education";
 import { motion } from "framer-motion";
 
 export default function index() {
-  const texts = [
-    "Digital Experiences",
-    "Robust systems solutions",
-    "Inoovative ideas",
-  ];
+
   return (
     <div className="py-40 ">
       {/* <Description /> */}

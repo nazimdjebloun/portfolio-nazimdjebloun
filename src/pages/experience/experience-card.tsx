@@ -29,23 +29,23 @@ export function ExperienceCard({
         <div className="flex justify-between">
           <div className="flex justify-between items-start flex-col ">
             <h3 className="text-xl font-bold">{role}</h3>
-            <p className="text-default-500">{company}</p>
-            <p className="text-small text-default-400">{period}</p>
+            <p className="text-zinc-500">{company}</p>
+            <p className="text-small text-zinc-500">{period}</p>
           </div>
           <div>
-            <div className="">
+            {/* <div className="">
               <img
                 width="70"
-                height = "70"
+                height="70"
                 src={companyLogo}
-                alt="companyLogo"
-                className="rounded-3xl object-contain"
+                alt=""
+                className="rounded-3xl object-contain border-none"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <p className="text-default-400">{description}</p>
+        <p className="text-zinc-500">{description}</p>
 
         <div
           className={`space-y-2 overflow-hidden transition-all duration-300 ${
@@ -73,6 +73,7 @@ export function ExperienceCard({
             </Chip>
           ))}
         </div>
+
         <Button
           variant="light"
           endContent={

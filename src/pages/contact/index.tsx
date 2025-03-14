@@ -1,16 +1,13 @@
 import { RainbowButton } from "@/components/magicui/rainbow-button";
-import { useState } from "react";
-import { Send, Check, Loader2 } from "lucide-react";
+
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { MagicCard } from "@/components/magicui/magic-card";
-import { useTheme } from "next-themes";
 export default function ContactPage() {
   const openEmail = () => {
     window.location.href = "mailto:djeblounnazim2@gmail.com";
   };
-  const { theme } = useTheme();
+
   return (
     <div className="py-40 min-h-screen bg-gradient-to-b from-background to-background/80  px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
