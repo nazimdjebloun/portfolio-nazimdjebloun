@@ -1,25 +1,17 @@
 
 import {
-  Code2,
   Layout,
   Database,
   Terminal,
-  GitBranch,
   Globe,
-  Blocks,
-  Cpu,
   Server,
-  Layers,
-  Palette,
   Wrench,
-  Icon,
 } from "lucide-react";
 import { RiReactjsFill } from "react-icons/ri";
 // import magicui from "public/magicui.svg"
 
 import {
   SiNextdotjs,
-  SiTypescript,
   SiPostgresql,
   SiExpress,
   SiNodedotjs,
@@ -28,9 +20,7 @@ import {
   SiGithub,
   SiTailwindcss,
   SiNextui,
-  SiHtml5,
   SiShadcnui,
-  SiCss3,
   SiReacthookform,
   SiAxios,
   SiPostman,
