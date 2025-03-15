@@ -25,6 +25,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { motion } from "framer-motion";
 import { Description } from "@/components/description";
+import CustomIconOrbit from "@/components/custom-icon-orbit";
 // import DownloadResume from "@/components/downloadResume";
 
 export default function Home() {
@@ -55,24 +56,25 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-center flex flex-col justify-center items-center"
         >
-          <OrbitingCircles radius={150}>
-            <RiReactjsFill size={200} />
-            <RiJavascriptFill size={200} />
-            <SiNextdotjs size={200} />
-            <SiTypescript size={200} />
-            <SiNodedotjs size={200} />
-            <SiExpress size={200} />
-            <SiPostgresql size={200} />
+          <OrbitingCircles radius={200}>
+            <RiReactjsFill size={100} />
+            <RiJavascriptFill size={100} />
+            <SiNextdotjs size={100} />
+            <SiTypescript size={100} />
+            <SiNodedotjs size={100} />
+            <SiExpress size={100} />
+            <SiPostgresql size={100} />
           </OrbitingCircles>
-          <OrbitingCircles radius={80} reverse speed={2}>
-            <VscVscode size={100} />
-            <SiTailwindcss size={100} />
-            <CiDatabase size={100} />
-            <SiGithub size={100} />
+          <OrbitingCircles radius={100} reverse speed={2}>
+            <VscVscode size={50} />
+            <SiTailwindcss size={50} />
+            <CiDatabase size={50} />
+            <SiGithub size={50} />
           </OrbitingCircles>
         </motion.div>
       </div>
       <div className="">
+        <CustomIconOrbit />
         <Description />
       </div>
       {/* <DownloadResume /> */}

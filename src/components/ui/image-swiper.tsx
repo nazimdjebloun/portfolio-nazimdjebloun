@@ -12,25 +12,25 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@heroui/react";
-
+import Image from "next/image";
 
 interface ImageSwiperProps extends React.HTMLAttributes<HTMLDivElement> {
-  images: string[]
+  images: string[];
 }
 
 export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
-  const [imgIndex, setImgIndex] = React.useState(0)
-  const dragX = useMotionValue(0)
+  const [imgIndex, setImgIndex] = React.useState(0);
+  const dragX = useMotionValue(0);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const onDragEnd = () => {
-    const x = dragX.get()
+    const x = dragX.get();
     if (x <= -10 && imgIndex < images.length - 1) {
-      setImgIndex((prev) => prev + 1)
+      setImgIndex((prev) => prev + 1);
     } else if (x >= 10 && imgIndex > 0) {
-      setImgIndex((prev) => prev - 1)
+      setImgIndex((prev) => prev - 1);
     }
-  }
+  };
 
   return (
     <div
@@ -103,7 +103,9 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
               className="h-full w-full shrink-0 overflow-hidden"
             >
               <div onClick={onOpen} className="overflow-hidden ">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   alt="image"
                   src={src}
                   className="h-full w-full  pointer-events-none "
@@ -129,7 +131,12 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
               </ModalHeader>
               <ModalBody>
                 <div className="relative h-full w-full  rounded-xl border">
-                  <img
+                  <Image
+                    unoptimized
+                    quality={100}
+                    priority
+                    width={500}
+                    height={500}
                     src={images[imgIndex]}
                     alt="Fullscreen view"
                     className="h-[100%] w-full object-contain rounded-2xl"

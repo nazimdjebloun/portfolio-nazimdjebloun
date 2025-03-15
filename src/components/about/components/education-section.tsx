@@ -54,6 +54,7 @@
 import React from "react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { Calendar, MapPin, Award, BookOpen, Briefcase } from "lucide-react";
+import Image from "next/image";
 
 interface Course {
   name: string;
@@ -105,7 +106,13 @@ export const EducationCard = ({
               </h3>
               <div className="flex items-center text-foreground/80">
                 {logo ? (
-                  <img src={logo} alt={institution} className="h-6 w-6 mr-2" />
+                  <Image
+                    width={500}
+                    height={500}
+                    src={logo}
+                    alt={institution}
+                    className="h-6 w-6 mr-2"
+                  />
                 ) : (
                   <Award className="h-5 w-5 mr-2 text-primary" />
                 )}
