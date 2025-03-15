@@ -56,7 +56,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-center flex flex-col justify-center items-center"
         ></motion.div> */}
-        <OrbitingCircles radius={150}>
+        <OrbitingCircles radius={240}>
           <RiReactjsFill size={30} />
           <RiJavascriptFill size={30} />
           <SiNextdotjs size={30} />
@@ -65,7 +65,7 @@ export default function Home() {
           <SiExpress size={30} />
           <SiPostgresql size={30} />
         </OrbitingCircles>
-        <OrbitingCircles radius={80} reverse speed={1}>
+        <OrbitingCircles radius={120} reverse speed={1}>
           <VscVscode size={30} />
           <SiTailwindcss size={30} />
           <CiDatabase size={30} />
