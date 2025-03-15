@@ -50,31 +50,30 @@ export default function Home() {
       </div>
 
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden ">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center flex flex-col justify-center items-center"
-        >
-          <OrbitingCircles radius={200}>
-            <RiReactjsFill size={100} />
-            <RiJavascriptFill size={100} />
-            <SiNextdotjs size={100} />
-            <SiTypescript size={100} />
-            <SiNodedotjs size={100} />
-            <SiExpress size={100} />
-            <SiPostgresql size={100} />
-          </OrbitingCircles>
-          <OrbitingCircles radius={100} reverse speed={2}>
-            <VscVscode size={50} />
-            <SiTailwindcss size={50} />
-            <CiDatabase size={50} />
-            <SiGithub size={50} />
-          </OrbitingCircles>
-        </motion.div>
+        ></motion.div> */}
+        <OrbitingCircles radius={150}>
+          <RiReactjsFill size={30} />
+          <RiJavascriptFill size={30} />
+          <SiNextdotjs size={30} />
+          <SiTypescript size={30} />
+          <SiNodedotjs size={30} />
+          <SiExpress size={30} />
+          <SiPostgresql size={30} />
+        </OrbitingCircles>
+        <OrbitingCircles radius={80} reverse speed={1}>
+          <VscVscode size={30} />
+          <SiTailwindcss size={30} />
+          <CiDatabase size={30} />
+          <SiGithub size={30} />
+        </OrbitingCircles>
       </div>
       <div className="">
-        <CustomIconOrbit />
+        {/* <CustomIconOrbit /> */}
         <Description />
       </div>
       {/* <DownloadResume /> */}
