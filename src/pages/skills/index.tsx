@@ -26,7 +26,7 @@ export default function Skills() {
             Technical Expertise
           </span>
 
-          <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
+          <p className="text-xl text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto pt-6">
             A comprehensive overview of my skills and technologies I work with
             to create modern, scalable, and user-friendly applications
           </p>
