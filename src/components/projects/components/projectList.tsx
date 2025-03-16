@@ -6,7 +6,7 @@ export default function ProjectList() {
   return (
     <div>
       <div className="">
-        <ul className="flex gap-20 p-10 flex-wrap">
+        <ul className="flex gap-20 p-10 flex-wrap items-center justify-center ">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

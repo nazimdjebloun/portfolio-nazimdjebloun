@@ -158,7 +158,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { div } from "framer-motion/client";
 
 const techStack = [
-  { Icon: SiNextdotjs, color: "text-gray-200" },
+  { Icon: SiNextdotjs, color: "text-black" },
   { Icon: RiReactjsFill, color: "text-blue-500" },
   { Icon: SiTypescript, color: "text-blue-600" },
   { Icon: SiPostgresql, color: "text-blue-700" },

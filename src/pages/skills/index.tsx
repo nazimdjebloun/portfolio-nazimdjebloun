@@ -37,19 +37,46 @@ export default function Skills() {
         <Tabs
           aria-label="Options"
           placement="top"
-          className="w-[320px] md:w-[750px] lg:w-[900px] mx-auto overflow-"
+          className="w-[350px] md:w-[750px] lg:w-[900px]  pb-3"
         >
           {skillCategories.map((category) => (
             <Tab
               key={category.title}
               title={category.title}
-              className="w-[320px] md:w-[750px] lg:w-[900px] mx-auto "
+              className="w-[350px] md:w-[750px] lg:w-[900px] p-0 m-0"
             >
               <SkillSection key={category.title} category={category} />
             </Tab>
           ))}
         </Tabs>
       </div>
+
+      {/* <div className="h-[200px] w-[350px] bg-red-200 p-3 grid grid-cols-[40px_40px_40px] gap-2">
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black ">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full  hover:w-[170px] bg-black ">
+          text
+        </div>
+        <div className="w-[40px] h-[40px]  rounded-full hover:w-[170px] bg-black ">
+          text
+        </div>
+        <div className="w-[40px] h-[40px] rounded-full hover:w-[170px] bg-black">
+          text
+        </div>
+      </div> */}
     </div>
   );
 }

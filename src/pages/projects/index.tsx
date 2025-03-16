@@ -5,7 +5,7 @@ import ProjectList from "@/components/projects/components/projectList";
 export default function Projects() {
   return (
     <div>
-      <ul className="py-40 flex flex-col justify-center items-center">
+      <div className="py-40 flex flex-col items-center justify-center ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Projects() {
           </span>
         </motion.div>
         <ProjectList />
-      </ul>
+      </div>
     </div>
   );
 }
