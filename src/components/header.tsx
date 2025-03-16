@@ -14,7 +14,7 @@ export default function Header() {
           // color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
           color={theme.theme === "dark" ? "white" : "black"}
         ></ShineBorder> */}
-      <div className=" w-[95%] h-fit p-4 flex flex-row justify-between items-center z-50 rounded-3xl  backdrop-blur-xl ">
+      <div className=" w-[95%] h-fit p-4 flex flex-row justify-between items-center z-50 rounded-3xl  backdrop-blur-xl">
         <div className="text-xl">PORTFOLIO</div>
         <Navbar />
         <ThemeSwitch />

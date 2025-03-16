@@ -3,7 +3,7 @@ import Header from "@/components/header";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="">
+    <div className="text-foreground">
       <Header />
       <main className="">{children}</main>
     </div>

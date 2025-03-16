@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className={` bg-background`}>
+    <Html lang="en" className={` bg-background text-black`}>
       <Head>
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
         <meta
