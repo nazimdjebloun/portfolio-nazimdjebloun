@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function Document() {
   return (
-    <Html lang="en" className={` bg-background text-black`}>
+    <Html lang="en" className={` bg-background text-foreground`}>
       <Head>
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
         <meta
@@ -13,6 +13,7 @@ export default function Document() {
       <body className="antialiased">
         <Main />
         <NextScript />
+        <SpeedInsights />
       </body>
     </Html>
   );
