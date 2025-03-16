@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss";
 // import { heroui } from "@heroui/react";
 
 export default {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
