@@ -176,7 +176,7 @@ export default function CustomIconOrbit() {
       {/* <div className="flex flex-row flex-wrap justify-center gap-10  p-5 space-y-5"> */}
       <div className="flex flex-row flex-wrap justify-center gap-10 p-5 ">
         {techStack.map(({ Icon, color }, index) => (
-          <div>
+          <div key={index}>
             <motion.div
               key={index}
               className={` text-5xl ${color} `}

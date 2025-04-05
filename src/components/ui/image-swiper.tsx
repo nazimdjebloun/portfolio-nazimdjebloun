@@ -133,8 +133,7 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
                 <div className="relative h-full w-full  rounded-xl border">
                   <Image
                     unoptimized
-                    quality={100}
-                    priority
+                    quality={50}
                     width={500}
                     height={500}
                     src={images[imgIndex]}

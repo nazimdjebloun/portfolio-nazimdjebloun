@@ -121,6 +121,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
+                  prefetch={true}
                   href={item.navLink}
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                   className={`block relative transition-colors duration-300  w-fit ${

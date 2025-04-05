@@ -11,6 +11,7 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@heroui/react";
+import dynamic from "next/dynamic";
 
 interface Stack {
   name: string;
@@ -30,7 +31,7 @@ interface ProjectCardProps {
   stack: Stack[];
 }
 
-export function ProjectCard({
+function ProjectCard({
   images,
   title,
   description,
@@ -133,3 +134,4 @@ export function ProjectCard({
     </li>
   );
 }
+export default ProjectCard;
