@@ -5,6 +5,7 @@ import Layout from "@/layouts/layout"; // Import Layout component
 import Head from "next/head";
 import { Geist } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,6 +84,7 @@ export default function App({ Component, pageProps }: AppProps) {
         >
           <Layout>
             <Component {...pageProps} />
+            <Analytics />
             <SpeedInsights />
           </Layout>
         </ThemeProvider>
