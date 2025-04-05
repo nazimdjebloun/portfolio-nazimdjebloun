@@ -121,6 +121,7 @@ export default function Navbar() {
                 }}
               >
                 <Link
+                  rel="preload"
                   prefetch={true}
                   href={item.navLink}
                   onClick={() => setIsMenuOpen(!isMenuOpen)}

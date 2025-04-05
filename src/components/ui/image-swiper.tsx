@@ -104,6 +104,7 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
             >
               <div onClick={onOpen} className="overflow-hidden ">
                 <Image
+                  loading="lazy"
                   width={500}
                   height={500}
                   alt="image"
@@ -132,6 +133,7 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
               <ModalBody>
                 <div className="relative h-full w-full  rounded-xl border">
                   <Image
+                    loading="lazy"
                     unoptimized
                     quality={50}
                     width={500}
