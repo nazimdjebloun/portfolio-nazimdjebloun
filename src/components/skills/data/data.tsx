@@ -42,7 +42,7 @@ interface SkillDetail {
   tools: tools[];
 }
 
-interface SkillCategory {
+export interface SkillCategoryType {
   title: string;
   icon: React.ReactNode;
   description: string;
@@ -70,7 +70,7 @@ export const AceternityLogo = () => {
   );
 };
 
-export const skillCategories: SkillCategory[] = [
+export const skillCategories: SkillCategoryType[] = [
   {
     // title: "Frontend Development",
     title: "Frontend",
