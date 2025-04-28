@@ -32,17 +32,7 @@ ExperienceCardProps) {
             <p className="text-zinc-500">{company}</p>
             <p className="text-small text-zinc-500">{period}</p>
           </div>
-          <div>
-            {/* <div className="">
-              <img
-                width="70"
-                height="70"
-                src={companyLogo}
-                alt=""
-                className="rounded-3xl object-contain border-none"
-              />
-            </div> */}
-          </div>
+          <div></div>
         </div>
 
         <p className="text-zinc-500">{description}</p>

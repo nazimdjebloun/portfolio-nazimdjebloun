@@ -64,13 +64,13 @@ export const data = [
     ),
   },
   {
-    title: "Sep 2022 - Present",
+    title: "Sep 2022 - Apr 2024",
     content: (
       <EducationCard
         title="Computer Science (TS)"
         institution="Ibn Rochde"
         location="Algiers, Algeria"
-        period="Sep 2022 - Present"
+        period="Sep 2022 - Apr 2024"
         description="Completed a comprehensive Computer Science program with a focus on Databases design,implemntation, admintration and management "
         courses={[
           { name: "Data Structures & Algorithms" },

@@ -1,46 +1,119 @@
 
 
 import { RiReactjsFill } from "react-icons/ri";
- import { AceternityLogo } from "@/components/skills/data/data";
- import {
-   SiNextdotjs,
-   // SiTypescript,
-   SiPostgresql,
-   SiExpress,
-   SiNodedotjs,
-   // SiGit,
-   SiReactquery,
-   // SiGithub,
-   SiTailwindcss,
-   SiNextui,
-   // SiHtml5,
-   SiShadcnui,
-   // SiCss3,
-   // SiReacthookform,
-   SiAxios,
-   // SiPostman,
- } from "react-icons/si";
- import { FaMagic } from "react-icons/fa";
+import { AceternityLogo } from "@/components/skills/data/data";
+import {
+  SiNextdotjs,
+  SiPostgresql,
+  SiExpress,
+  SiNodedotjs,
+  SiReactquery,
+  SiTailwindcss,
+  SiNextui,
+  SiShadcnui,
+  SiAxios,
+} from "react-icons/si";
+import { FaMagic } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
 
- import { RiJavascriptFill } from "react-icons/ri";
- import { BiLogoTypescript } from "react-icons/bi";
+// Optimize image imports using Next.js Image optimization
+const PORTFOLIO_IMAGES = {
+  portfolio: "/images/projects/portfolio/potfolio.png",
+  education: "/images/projects/portfolio/education.png",
+  skills: "/images/projects/portfolio/skills.png",
+  contact: "/images/projects/portfolio/contact.png",
+};
 
- import portfolio from "@public/images/projects/portfolio/potfolio.png";
- import education from "@public/images/projects/portfolio/education.png";
- import skills from "@public/images/projects/portfolio/skills.png";
- import contact from "@public/images/projects/portfolio/contact.png";
+const PRODUCTION_IMAGES = {
+  client: "/images/projects/productionapp/client.png",
+  affichefiche: "/images/projects/productionapp/affiche-dossier.png",
+  createdossier: "/images/projects/productionapp/create-dossier.png",
+  dossier: "/images/projects/productionapp/dossier.png",
+  pv: "/images/projects/productionapp/pv.png",
+  createfiche: "/images/projects/productionapp/create-fiche.png",
+};
 
-// import add from "@/public/images/projects/todolist/add.png";
-import add from "@public//images/projects/todolist/add.png";
-import deleteTask from "@public/images/projects/todolist/deleteTask.png";
-import view from "@public/images/projects/todolist/view.png";
-import edit from "@public/images/projects/todolist/edit.png";
-import SimpleToDoList from "@public/images/projects/todolist/SimpleToDoList.png";
+const TODO_IMAGES = {
+  add: "/images/projects/todolist/add.png",
+  deleteTask: "/images/projects/todolist/deleteTask.png",
+  view: "/images/projects/todolist/view.png",
+  edit: "/images/projects/todolist/edit.png",
+  simple: "/images/projects/todolist/SimpleToDoList.png",
+};
 
-const projects = [
+// Type definitions for better type safety
+interface Stack {
+  name: string;
+  icon?: React.ReactNode;
+}
+
+interface ProjectDetails {
+  overview: string;
+  features: { name: string }[];
+}
+
+interface Project {
+  images: string[];
+  title: string;
+  description: string;
+  details: ProjectDetails;
+  stack: Stack[];
+}
+
+const projects: Project[] = [
   {
-    images: [portfolio.src, education.src, skills.src, contact.src],
-
+    images: [
+      PRODUCTION_IMAGES.client,
+      PRODUCTION_IMAGES.createfiche,
+      PRODUCTION_IMAGES.dossier,
+      PRODUCTION_IMAGES.pv,
+      PRODUCTION_IMAGES.createfiche,
+      PRODUCTION_IMAGES.affichefiche,
+    ],
+    title: "Production management app",
+    description:
+      "A Full stack production management app built for real use case",
+    details: {
+      overview:
+        "A production management app with manufacturing workflow tracker designed to optimize workshop operations, from client orders to production delivery.",
+      features: [
+        {
+          name: "Track client details, purchase orders, and order specifications",
+        },
+        {
+          name: "Generate production sheets per workshop with status updates (In Progress/Completed)",
+        },
+        {
+          name: "Monitor raw material usage with quantities/prices per production sheet",
+        },
+        {
+          name: "Create inspection reports (PV) with reservations and approval statuses",
+        },
+        {
+          name: "Track order progress (Processing/Finished) and production bottlenecks",
+        },
+      ],
+    },
+    stack: [
+      { name: "Next Js", icon: <SiNextdotjs /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Shadcn", icon: <SiShadcnui /> },
+      { name: "JavaScript", icon: <RiJavascriptFill /> },
+      { name: "Node js", icon: <SiNodedotjs /> },
+      { name: "Express js", icon: <SiExpress /> },
+      { name: "AXIOS", icon: <SiAxios /> },
+      { name: "React Query", icon: <SiReactquery /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+    ],
+  },
+  {
+    images: [
+      PORTFOLIO_IMAGES.portfolio,
+      PORTFOLIO_IMAGES.education,
+      PORTFOLIO_IMAGES.skills,
+      PORTFOLIO_IMAGES.contact,
+    ],
     title: "Portfolio",
     description:
       " A modern, responsive portfolio showcasing my journey, skills, and how to get in touch",
@@ -68,17 +141,15 @@ const projects = [
   },
   {
     images: [
-      SimpleToDoList.src,
-      add.src,
-      edit.src,
-      view.src,
-      deleteTask.src,
-      add.src,
+      TODO_IMAGES.simple,
+      TODO_IMAGES.add,
+      TODO_IMAGES.edit,
+      TODO_IMAGES.view,
+      TODO_IMAGES.deleteTask,
     ],
-    // images: [add.src, deleteTask.src, view.src, edit.src],
     title: "TO DO LIST",
-    description: `A modern, responsive task management system with real-time updates and intuitive user interface
-`,
+    description:
+      "A modern, responsive task management system with real-time updates and intuitive user interface",
     details: {
       // Users can create, view, edit, and delete tasks, as well as move them between different status columns as their progress changes.
       overview:

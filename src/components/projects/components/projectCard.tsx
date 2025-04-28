@@ -12,6 +12,7 @@ import {
   useDisclosure,
 } from "@heroui/react";
 import dynamic from "next/dynamic";
+import { Check, CheckCircle2 } from "lucide-react";
 
 interface Stack {
   name: string;
@@ -41,7 +42,7 @@ function ProjectCard({
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <li className=" group">
+    <li className="group h-[600px] ">
       <div className="bg-background border relative h-full rounded-xl p-2">
         <GlowingEffect
           spread={40}
@@ -107,14 +108,18 @@ function ProjectCard({
                   <p className="text-md">{details.overview}</p>
 
                   {/* Display features */}
-                  <ul className="mt-4 space-y-2 text-md">
-                    {details.features.map((feature, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <span className="">○</span>
-                        <span>{feature.name}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {details && (
+                    <ul className="mt-4 space-y-2 text-md">
+                      {details.features.map((feature, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                          <span className="">
+                            <CheckCircle2 />
+                          </span>
+                          <span>{feature.name}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </ModalBody>
 
                 <ModalFooter>

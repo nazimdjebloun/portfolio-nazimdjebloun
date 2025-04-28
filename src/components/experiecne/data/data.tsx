@@ -22,12 +22,16 @@ export const experiences = [
   {
     role: "TS internship",
     company: "ANEP",
-    period: "Sep 2024 – Present",
+    period: "Sep 2024 – Apr 2024",
     description:
-      "Currently designing and building a production management application.",
+      "Designed and developed a full-stack production management application to optimize manufacturing workflows and resource allocation.",
     achievements: [
-      "In the process of designing the app architeture ",
-      "In the process of designing the app UX/UI design",
+      "Architected database schema with 12+ relational PostgreSQL tables for manufacturing operations",
+      "Implemented responsive UI/UX with Next.js and Tailwind CSS",
+      "Developed order tracking system with real-time status updates",
+      "Built production workflow management with workshop assignment features",
+      "Created material consumption tracking",
+      "Reduced manual reporting time  through automated status updates",
     ],
     skills: [],
     companyLogo: "",

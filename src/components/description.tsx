@@ -4,11 +4,6 @@ import React from "react";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { CustomGradientText } from "@/components/custom-gradient-text";
 
-// const texts = [
-//   "Digital Experiences",
-//   "Robust systems solutions",
-//   "Inoovative ideas",
-// ];
 
 export function Description() {
   return (
@@ -49,14 +44,3 @@ export function Description() {
 
 
 
-      //  <MorphingText
-      //     texts={texts}
-      //     className=" dark:from-white dark:to-slate-900/10"
-      //   /> 
-
-//  <GradientText colors={["foreground", "zinc-700", "purple-500"]}>
-//     innovation.
-//   </GradientText>;
-//    <h1 className="text-4xl font-bold bg-gradient-to-r from-color-1 via-color-3 to-color-5 bg-clip-text text-transparent animate-gradient">
-//           Gradient Text
-//     </h1> 
