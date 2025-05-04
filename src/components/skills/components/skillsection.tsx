@@ -3,7 +3,6 @@
 import React from 'react'
 import { SkillCard } from "./skillcard";
 import { ShineBorder } from "@/components/magicui/shine-border";
-// import { useTheme } from "next-themes";
 interface tools {
   tool: string;
   icon: React.ReactNode;
@@ -23,16 +22,10 @@ interface SkillCategory {
 }
 
 export function SkillSection({ category }: { category: SkillCategory }) {
-  // const theme = useTheme();
   return (
-    // <ShineBorder
-    //   className="relative rounded-xl p-0"
-    //   color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-    // >
     <ShineBorder
       className="rounded-xl p-0  w-[350px] md:w-[750px] lg:w-[900px] mx-auto"
       color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-      // color={theme.theme === "dark" ? "white" : "black"}
     >
       <div className="bg-secondary  rounded-xl p-6 ">
         <div className="flex items-center gap-3 mb-4">

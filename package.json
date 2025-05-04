@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroui/react": "^2.7.2",
-    "@radix-ui/react-slot": "^1.1.2",
+    "@heroui/react": "^2.7.8",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-tabs": "^1.1.9",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
@@ -28,7 +29,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@next/bundle-analyzer": "^15.2.2",
+    "@next/bundle-analyzer": "^15.3.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

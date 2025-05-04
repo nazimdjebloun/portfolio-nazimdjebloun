@@ -177,16 +177,7 @@ export default {
               "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
           },
         },
-        // orbit: {
-        //   "0%": {
-        //     transform:
-        //       "rotate(calc(var(--angle) * 1deg)) translateX(var(--radius) * 1px) rotate(calc(var(--angle) * -1deg))",
-        //   },
-        //   "100%": {
-        //     transform:
-        //       "rotate(calc(var(--angle) * 1deg + 360deg)) translateX(var(--radius) * 1px) rotate(calc(var(--angle) * -1deg - 360deg))",
-        //   },
-        // },
+
         rainbow: {
           "0%": {
             "background-position": "0%",

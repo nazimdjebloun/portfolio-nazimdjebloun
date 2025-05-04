@@ -1,6 +1,16 @@
 import React from "react";
-import { Card, CardBody, CardFooter, Button, Chip } from "@heroui/react";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { BadgeCheck, ChevronDown, ChevronUp } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface ExperienceCardProps {
   role: string;
@@ -25,7 +35,7 @@ ExperienceCardProps) {
 
   return (
     <Card className="w-full bg-background border">
-      <CardBody className="p-5 space-y-5">
+      <CardContent className="p-5 space-y-5">
         <div className="flex justify-between">
           <div className="flex justify-between items-start flex-col ">
             <h3 className="text-xl font-bold">{role}</h3>
@@ -49,22 +59,22 @@ ExperienceCardProps) {
             </div>
           ))}
         </div>
-      </CardBody>
+      </CardContent>
       <CardFooter className="flex-col gap-4">
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
-            <Chip
+            <Badge
               key={index}
-              variant="flat"
-              size="sm"
+              variant="outline"
+              // size="sm"
               className="bg-default-100"
             >
               {skill}
-            </Chip>
+            </Badge>
           ))}
         </div>
 
-        <Button
+        {/* <Button
           variant="light"
           endContent={
             isExpanded ? (
@@ -77,6 +87,19 @@ ExperienceCardProps) {
           className="w-full"
         >
           {isExpanded ? "Show Less" : "Show More"}
+        </Button> */}
+
+        <Button
+          variant="ghost"
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full"
+        >
+          <span>{isExpanded ? "Show Less" : "Show More"}</span>
+          {isExpanded ? (
+            <ChevronUp className="h-4 w-4 transition-transform" />
+          ) : (
+            <ChevronDown className="h-4 w-4 transition-transform" />
+          )}
         </Button>
       </CardFooter>
     </Card>

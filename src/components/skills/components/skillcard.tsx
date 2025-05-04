@@ -1,6 +1,5 @@
 
 "use client";
-import { div, span } from "framer-motion/client";
 import React from "react";
 
 interface tools {
