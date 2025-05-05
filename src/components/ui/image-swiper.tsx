@@ -4,14 +4,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
 import { Button } from "@/components/ui/button";
+// import {
+//   Modal,
+//   ModalContent,
+//   ModalHeader,
+//   ModalBody,
+//   ModalFooter,
+//   useDisclosure,
+// } from "@heroui/react";
+
+
 import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  useDisclosure,
-} from "@heroui/react";
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 import Image from "next/image";
 
 interface ImageSwiperProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -21,7 +34,16 @@ interface ImageSwiperProps extends React.HTMLAttributes<HTMLDivElement> {
 export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
   const [imgIndex, setImgIndex] = React.useState(0);
   const dragX = useMotionValue(0);
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  // const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [dialogIsOpen, dialogSetIsOpen] = React.useState(false);
+
+  const handleOpenModal = () => {
+    dialogSetIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    dialogSetIsOpen(false);
+  };
 
   const onDragEnd = () => {
     const x = dragX.get();
@@ -102,7 +124,11 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
               key={i}
               className="h-full w-full shrink-0 overflow-hidden"
             >
-              <div onClick={onOpen} className="overflow-hidden ">
+              <div
+                // onClick={onOpen}
+                onClick={handleOpenModal}
+                className="overflow-hidden "
+              >
                 <Image
                   loading="lazy"
                   width={500}
@@ -117,8 +143,42 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
         })}
       </motion.div>
 
-      <Button onClick={onOpen}>Open Modal</Button>
-      <Modal
+      <Dialog open={dialogIsOpen} onOpenChange={handleCloseModal}>
+        <DialogContent className="max-w-[90%] overflow-y-auto ">
+          <DialogHeader>
+            <DialogTitle>Full screen view</DialogTitle>
+            <DialogDescription></DialogDescription>
+          </DialogHeader>
+          <div className="relative h-full w-full  rounded-xl border">
+            <Image
+              loading="lazy"
+              unoptimized
+              quality={50}
+              width={500}
+              height={500}
+              src={images[imgIndex]}
+              alt="Fullscreen view"
+              className="h-[100%] w-full object-contain rounded-2xl"
+            />
+          </div>
+          <DialogFooter className="sm:justify-start">
+            <DialogClose asChild>
+              {/* <Button type="button" variant="secondary">
+                Close
+              </Button> */}
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}
+
+{
+  /* <Button onClick={onOpen}>Open Modal</Button> */
+}
+{
+  /* <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         size="5xl"
@@ -156,8 +216,5 @@ export function ImageSwiper({ images, className, ...props }: ImageSwiperProps) {
             </>
           )}
         </ModalContent>
-      </Modal>
-    </div>
-  );
+      </Modal> */
 }
-

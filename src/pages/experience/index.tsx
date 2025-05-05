@@ -20,7 +20,7 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="grid gap-6">
+        <div className="grid gap-6 p-2">
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} {...experience} />
           ))}

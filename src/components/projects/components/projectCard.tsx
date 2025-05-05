@@ -2,17 +2,28 @@ import React from "react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { Button } from "@/components/ui/button";
 import { ImageSwiper } from "@/components/ui/image-swiper";
-import { Divider } from "@heroui/react";
+// import {
+//   Modal,
+//   ModalContent,
+//   ModalHeader,
+//   ModalBody,
+//   ModalFooter,
+//   useDisclosure,
+// } from "@heroui/react";
+
 import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  useDisclosure,
-} from "@heroui/react";
-import dynamic from "next/dynamic";
-import { Check, CheckCircle2 } from "lucide-react";
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
+import { CheckCircle2 } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+
 
 interface Stack {
   name: string;
@@ -39,7 +50,7 @@ function ProjectCard({
   details,
   stack,
 }: ProjectCardProps) {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  // const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <li className="group h-[600px] ">
@@ -65,14 +76,44 @@ function ProjectCard({
 
           <div className="text-xs sm:text-sm md:text-lg flex flex-col items-start">
             <p>{description}</p>
-            <Button
+            {/* <Button
               variant="secondary"
               className="rounded-xl self-end"
               onClick={onOpen}
             >
               View details
-            </Button>
-            <Divider className="my-2" />
+            </Button> */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="secondary" className="rounded-xl self-end">
+                  View details
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px]  p-5 rounded-3xl">
+                <DialogHeader>
+                  <DialogTitle>Edit profile</DialogTitle>
+                  <DialogDescription>
+                    Make changes to your profile here. Click save when you're
+                    done.
+                  </DialogDescription>
+                </DialogHeader>
+                <p className="text-md">{details.overview}</p>
+
+                {details && (
+                  <ul className="mt-4 space-y-2 text-md">
+                    {details.features.map((feature, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <span className="">
+                          <CheckCircle2 />
+                        </span>
+                        <span>{feature.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </DialogContent>
+            </Dialog>
+            <Separator className="my-4" />
           </div>
 
           <div className="flex flex-wrap gap-2 ">
@@ -93,8 +134,18 @@ function ProjectCard({
             ))}
           </div>
         </div>
+      </div>
+    </li>
+  );
+}
+export default ProjectCard;
 
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur">
+
+
+
+
+        {
+          /* <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur">
           <ModalContent className="bg-background">
             {(onClose) => (
               <>
@@ -103,11 +154,10 @@ function ProjectCard({
                 </ModalHeader>
 
                 <ModalBody>
-                  {/* <div>{details}</div> */}
-                  {/* Display overview */}
+
                   <p className="text-md">{details.overview}</p>
 
-                  {/* Display features */}
+                  
                   {details && (
                     <ul className="mt-4 space-y-2 text-md">
                       {details.features.map((feature, index) => (
@@ -134,9 +184,5 @@ function ProjectCard({
               </>
             )}
           </ModalContent>
-        </Modal>
-      </div>
-    </li>
-  );
-}
-export default ProjectCard;
+        </Modal> */
+        }

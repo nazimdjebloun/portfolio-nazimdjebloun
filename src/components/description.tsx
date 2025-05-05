@@ -1,7 +1,6 @@
 import React from "react";
 // import { MorphingText } from "@/components/magicui/morphing-text";
 // import { GradientText } from "@/components/ui/gradient-text";
-import { AuroraText } from "@/components/magicui/aurora-text";
 import { CustomGradientText } from "@/components/custom-gradient-text";
 
 

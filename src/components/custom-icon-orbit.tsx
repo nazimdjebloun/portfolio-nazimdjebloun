@@ -9,9 +9,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
-import { VscVscode } from "react-icons/vsc";
 import { RiJavascriptFill } from "react-icons/ri";
-import { div } from "framer-motion/client";
 
 const techStack = [
   { Icon: SiNextdotjs, color: "text-black" },

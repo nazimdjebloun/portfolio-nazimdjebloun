@@ -1,6 +1,7 @@
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { Card } from "@/components/ui/card";
 
 export default function ContactPage() {
   const openEmail = () => {
@@ -23,7 +24,8 @@ export default function ContactPage() {
         </div>
 
         <div className="flex gap-20 flex-wrap w-full justify-center items-center">
-          <div className=" border-zinc-300 border dark:border-borderaccent p-5 rounded-2xl w-[350px] h-[200px] bg-gradient-to-br from-background to-background/60">
+          {/* <div className=" border-zinc-300 border dark:border-borderaccent p-5 rounded-2xl w-[350px] h-[200px] bg-gradient-to-br from-background to-background/60"> */}
+          <Card className="bg-secondary p-5 border-zinc-300 border dark:border-borderaccent  w-[350px] h-[200px]">
             <h2 className="text-2xl font-semibold mb-4">Check out my GitHub</h2>
             <p className="text-muted-foreground mb-4">
               Explore my open-source projects and contributions.
@@ -37,8 +39,10 @@ export default function ContactPage() {
               <FaGithub className="w-6 h-6" /> Visit My GitHub
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
-          </div>
-          <div className="border-zinc-300 border dark:border-borderaccent p-5 rounded-2xl w-[350px] h-[200px] bg-gradient-to-br from-background to-background/60">
+          </Card>
+          {/* </div> */}
+          {/* <div className="border-zinc-300 border dark:border-borderaccent p-5 rounded-2xl w-[350px] h-[200px] bg-gradient-to-br from-background to-background/60"> */}
+          <Card className="bg-secondary p-5 border-zinc-300 border dark:border-borderaccent  w-[350px] h-[200px]">
             <h2 className="text-2xl font-semibold mb-4">Connect on LinkedIn</h2>
             <p className="text-muted-foreground mb-4">
               Let&apos;s network and discuss new opportunities.
@@ -52,7 +56,8 @@ export default function ContactPage() {
               <CiLinkedin className="w-6 h-6" /> Visit My LinkedIn
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
-          </div>
+          </Card>
+          {/* </div> */}
         </div>
       </div>
     </div>
