@@ -78,7 +78,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={`bg-background ${geistSans.className} `}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

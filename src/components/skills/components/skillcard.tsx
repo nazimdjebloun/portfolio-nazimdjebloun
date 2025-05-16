@@ -15,7 +15,7 @@ interface SkillDetail {
 // bg - zinc - 700;
 export function SkillCard({ skill }: { skill: SkillDetail }) {
   return (
-    <div className="border-1  dark:border-borderaccent p-4 rounded-2xl hover:shadow-lg  transition-all duration-300 ">
+    <div className="border  dark:border-borderaccent p-4 rounded-2xl hover:shadow-lg  transition-all duration-300 ">
       <h4 className="text-sm md:text-xl font-semibold text-[hsl(var(--foreground))]   mb-2">
         {skill.name}
       </h4>
@@ -41,8 +41,6 @@ export function SkillCard({ skill }: { skill: SkillDetail }) {
           </div>
         ))}
       </div>
-
-
     </div>
   );
 }
