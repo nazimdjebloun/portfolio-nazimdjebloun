@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const handleDownload = () => {
-  const resumeUrl = "./NAZIM.DJEBLOUN.CV.pdf";
+  const resumeUrl = "./nazimdjeblounCV.pdf";
   const link = document.createElement("a");
   link.href = resumeUrl;
-  link.download = "./NAZIM.DJEBLOUN.CV.pdf";
+  link.download = "./nazimdjeblounCV.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

@@ -12,6 +12,7 @@ import {
   SiNextui,
   SiShadcnui,
   SiAxios,
+  SiSupabase,
 } from "react-icons/si";
 import { FaMagic } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -23,6 +24,13 @@ const PORTFOLIO_IMAGES = {
   education: "/images/projects/portfolio/education.png",
   skills: "/images/projects/portfolio/skills.png",
   contact: "/images/projects/portfolio/contact.png",
+};
+const SHLADTY_IMAGES = {
+  linktree: "/images/projects/shladty/shladty-linktree.png",
+  menu: "/images/projects/shladty/shladty-menu.png",
+  order: "/images/projects/shladty/shladty-order.png",
+  checkout: "/images/projects/shladty/shladty-checkout.png",
+  admin: "/images/projects/shladty/shladty-admin.png",
 };
 
 const PRODUCTION_IMAGES = {
@@ -62,6 +70,50 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    images: [
+      SHLADTY_IMAGES.linktree,
+      SHLADTY_IMAGES.menu,
+      SHLADTY_IMAGES.order,
+      SHLADTY_IMAGES.checkout,
+      SHLADTY_IMAGES.admin,
+    ],
+    title: "Shladty Ordering App",
+    description:
+      "A real-time ordering and restaurant management app built for a beachside restaurant. ",
+    details: {
+      overview:
+        "A full-stack ordering system allowing customers to scan a QR code to browse the menu and place orders, with a live admin dashboard for real-time order tracking and workflow management.",
+      features: [
+        {
+          name: "QR-code based ordering for seamless client interaction",
+        },
+        {
+          name: "Live admin dashboard with real-time updates on incoming orders",
+        },
+        {
+          name: "Category-based menu with item details and special notes ",
+        },
+        {
+          name: "Order tracking from creation to fulfillment, including special instructions",
+        },
+        {
+          name: "Secure user authentication using clerk Auth for admins",
+        },
+      ],
+    },
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Shadcn UI", icon: <SiShadcnui /> },
+      { name: "JavaScript", icon: <RiJavascriptFill /> },
+      { name: "Supabase", icon: <SiSupabase /> },
+      { name: "React Query", icon: <SiReactquery /> },
+      { name: "Axios", icon: <SiAxios /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+    ],
+  },
+
   {
     images: [
       PRODUCTION_IMAGES.client,
