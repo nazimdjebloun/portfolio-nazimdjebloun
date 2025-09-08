@@ -8,7 +8,7 @@ const ExperienceCard = dynamic(() =>
 
 export default function Experience() {
   return (
-    <div className="min-h-screen bg-background py-40 ">
+    <div className="min-h-screen bg-background py-40">
       <div className="max-w-4xl mx-auto flex justify-center items-center flex-col">
         <div className="flex content-center justify-center flex-col">
           <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center  lg:text-8xl  md:text-6xl text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">

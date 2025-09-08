@@ -10,7 +10,6 @@ export function Description() {
       {/* <div className=" px-10  pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center md:text-2xl/8 sm:text-xl/8  text-transparent dark:from-white dark:to-slate-900/10"> */}
       <div className="px-10 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500 bg-clip-text text-center md:text-2xl/8 sm:text-xl/8 text-transparent dark:from-white dark:to-slate-400">
         I&apos;m a full-stack
-        {/* <AuroraText> software </AuroraText> */}
         <CustomGradientText className="font-normal" gradient="medium">
           {" "}
           software{" "}
