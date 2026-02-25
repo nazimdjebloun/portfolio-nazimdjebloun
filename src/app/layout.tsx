@@ -13,8 +13,16 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Nazim Djebloun portfolio",
-  description: "Nazim Djebloun- Full Stack Software Developer specializing in web applications with modern technologies",
-  keywords: ["full stack software developer", "web developer", "react", "nextjs", "nodejs", "expressjs"],
+  description:
+    "Nazim Djebloun- Full Stack Software Developer specializing in web applications with modern technologies",
+  keywords: [
+    "full stack software developer",
+    "web developer",
+    "react",
+    "nextjs",
+    "nodejs",
+    "expressjs",
+  ],
   authors: [{ name: "Nazim" }],
   metadataBase: new URL("https://www.nazimdjebloun.com/"),
   alternates: {
@@ -22,7 +30,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nazim Djebloun - Full Stack Software Developer",
-    description: "Building modern web applications with React, Next.js, Node.js, express.js and TypeScript",
+    description:
+      "Building modern web applications with React, Next.js, Node.js, express.js and TypeScript",
     url: "https://www.nazimdjebloun.com/",
     siteName: "Nazim Djebloun portfolio",
     images: [
@@ -33,7 +42,10 @@ export const metadata: Metadata = {
     type: "website",
   },
   other: {
-    "portfolio": "This is the portfolio page of nazim djebloun ",
+    portfolio: "This is the portfolio page of nazim djebloun ",
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
 };
 
