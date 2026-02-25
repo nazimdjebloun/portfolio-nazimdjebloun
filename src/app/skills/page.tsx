@@ -20,7 +20,7 @@ export default function SkillsPage() {
   return (
     <div className="flex flex-col justify-center items-center content-center py-20 md:py-40 px-4">
       <div className="text-center mb-8 md:mb-12">
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center lg:text-8xl md:text-6xl text-4xl font-semibold leading-tight text-transparent dark:from-white dark:to-slate-900/10">
+        <span className="pointer-events-none whitespace-pre-wrap bg-linear-to-b from-foreground to-zinc-500/80 bg-clip-text text-center lg:text-8xl md:text-6xl text-4xl font-semibold leading-tight text-transparent dark:from-white dark:to-slate-900/10">
           Technical Expertise
         </span>
 
@@ -30,7 +30,10 @@ export default function SkillsPage() {
         </p>
       </div>
 
-      <Tabs defaultValue={skillCategories[0]?.title} className="w-full max-w-4xl">
+      <Tabs
+        defaultValue={skillCategories[0]?.title}
+        className="w-full max-w-4xl"
+      >
         <TabsList className="grid w-full grid-cols-3">
           {skillCategories.map((category) => (
             <TabsTrigger key={category.title} value={category.title}>

@@ -1,8 +1,18 @@
-
 "use client";
-import React from 'react'
+// import React from "react";
+// import { SkillCard } from "./skillcard";
+// import { ShineBorder } from "@/components/ui/shine-border";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ShineBorder } from "@/components/ui/shine-border";
 import { SkillCard } from "./skillcard";
-import { ShineBorder } from "@/components/magicui/shine-border";
 interface tools {
   tool: string;
   icon: React.ReactNode;
@@ -23,17 +33,15 @@ interface SkillCategory {
 
 export function SkillSection({ category }: { category: SkillCategory }) {
   return (
-    <ShineBorder
-      className="rounded-xl p-0  w-[350px] md:w-[750px] lg:w-[900px] mx-auto"
-      color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-    >
-      <div className="bg-secondary  rounded-xl p-6 w-full">
+    <div className="relative w-full  overflow-hidden  rounded-xl ">
+      <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+      <div className="bg-secondary/50 backdrop-blur-sm p-6 w-full h-full">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 bg-fourground bg-opacity-10 rounded-lg">
             {category.icon}
           </div>
           <div>
-            <h3 className="text-sm md:text-xl font-bold text-[hsl(var(--foreground))]">
+            <h3 className="text-sm md:text-xl font-bold text-foreground">
               {category.title}
             </h3>
             <p className="text-sm text-[hsl(var(--muted-foreground))]">
@@ -47,6 +55,7 @@ export function SkillSection({ category }: { category: SkillCategory }) {
           ))}
         </div>
       </div>
-    </ShineBorder>
+      <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+    </div>
   );
 }

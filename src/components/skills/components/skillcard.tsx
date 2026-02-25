@@ -16,7 +16,7 @@ interface SkillDetail {
 export function SkillCard({ skill }: { skill: SkillDetail }) {
   return (
     <div className="border  dark:border-borderaccent p-4 rounded-2xl hover:shadow-lg  transition-all duration-300 ">
-      <h4 className="text-sm md:text-xl font-semibold text-[hsl(var(--foreground))]   mb-2">
+      <h4 className="text-sm md:text-xl font-semibold text-foreground   mb-2">
         {skill.name}
       </h4>
       <p className="text-sm text-[hsl(var(--muted-foreground))] mb-3">
@@ -27,9 +27,9 @@ export function SkillCard({ skill }: { skill: SkillDetail }) {
         {skill.tools.map((tool: any, index: number) => (
           <div className="" key={tool.tool}>
             <div className=" inline box-border">
-              <div className="overflow-hidden border-1 dark:border-borderaccent  bg-accent group  h-fit w-[40px]  rounded-full cursor-pointer shadow-lg hover:w-[170px]  transition-[width,transform,shadow] duration-300 hover:shadow-xl hover:scale-105">
+              <div className="overflow-hidden border dark:border-borderaccent  bg-accent group  h-fit w-[40px]  rounded-full cursor-pointer shadow-lg hover:w-[170px]  transition-[width,transform,shadow] duration-300 hover:shadow-xl hover:scale-105">
                 <div className=" flex  items-center h-full w-full rounded-full ">
-                  <div className=" rounded-full bg-secondary flex-shrink-0 flex items-center justify-center size-[40px] transition-transform duration-300 group-hover:scale-100">
+                  <div className=" rounded-full bg-secondary shrink-0 flex items-center justify-center size-[40px] transition-transform duration-300 group-hover:scale-100">
                     {tool.icon}
                   </div>
                   <span className="px-2 opacity-0 text-[12px] font-medium whitespace-nowrap transform translate-x-[-10px] transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
