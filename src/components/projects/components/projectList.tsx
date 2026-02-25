@@ -56,6 +56,7 @@ export default function ProjectList() {
               //   }
               // ></Suspense>
               <LazyProjectCard
+                key={index}
                 images={project.images}
                 title={project.title}
                 description={project.description}

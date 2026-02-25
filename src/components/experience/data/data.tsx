@@ -1,5 +1,27 @@
 export const experiences = [
   {
+    role: "Software Developer",
+    company: "Digitkom",
+    period: "Oct 2025 – Present",
+    description:
+      "Building full-stack web applications and complex internal systems end-to-end.",
+    achievements: [
+      "Built an end-to-end e-commerce platform.",
+      "Developing an internal CRM and ERP system to streamline business operations.",
+      "Built a digital menu for restaurants featuring a comprehensive admin panel for real-time management.",
+    ],
+    skills: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "Full Stack Development",
+      "E-commerce",
+      "CRM/ERP Systems",
+    ],
+    companyLogo: "",
+  },
+  {
     role: "Software Developer (Freelancer)",
     company: "Self-Employed",
     period: "2024 – Present",

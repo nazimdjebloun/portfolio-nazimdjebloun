@@ -1,0 +1,25 @@
+import React from "react";
+import dynamic from "next/dynamic";
+
+const ProjectList = dynamic(
+  () => import("@/components/projects/components/projectList")
+);
+
+export default function ProjectsPage() {
+  return (
+    <div className="py-20 md:py-40 flex flex-col items-center justify-center">
+      <div className="flex flex-col justify-center px-4">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-foreground to-zinc-500/80 bg-clip-text text-center text-5xl md:text-8xl font-semibold leading-tight text-transparent dark:from-white dark:to-slate-900/10">
+          Projects
+        </span>
+        <p className="text-lg md:text-xl text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto pt-6 text-center">
+          A collection of key projects that showcase my development journey
+          and hands-on experience with modern web technologies.
+        </p>
+      </div>
+      <div className="w-full">
+        <ProjectList />
+      </div>
+    </div>
+  );
+}

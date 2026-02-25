@@ -1,5 +1,5 @@
 import React from "react";
-import { experiences } from "../../components/experiecne/data/data";
+import { experiences } from "../../components/experience/data/data";
 import dynamic from "next/dynamic";
 
 const ExperienceCard = dynamic(() =>
