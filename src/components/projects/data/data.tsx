@@ -50,6 +50,30 @@ const TODO_IMAGES = {
   simple: "/images/projects/todolist/SimpleToDoList.png",
 };
 
+const DIGITKOM_LANDING_IMAGES = {
+  main: "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-22-47 DigitKom.png",
+  sec: "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-03 DigitKom.png",
+  third:
+    "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-12 DigitKom.png",
+  fourth:
+    "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-23 DigitKom.png",
+  fifth:
+    "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-36 DigitKom.png",
+  sixth:
+    "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-52 DigitKom.png",
+};
+
+const DIGITKOM_ADMIN_IMAGES = {
+  img1: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-27-50 DigitKom.png",
+  img2: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-27-58 DigitKom.png",
+  img3: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-19 DigitKom.png",
+  img4: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-26 DigitKom.png",
+  img5: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-43 DigitKom.png",
+  img6: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-50 DigitKom.png",
+  img7: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-58 DigitKom.png",
+  img8: "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-29-19 DigitKom.png",
+};
+
 // Type definitions for better type safety
 interface Stack {
   name: string;
@@ -70,6 +94,94 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    images: [
+      DIGITKOM_ADMIN_IMAGES.img1,
+      DIGITKOM_ADMIN_IMAGES.img2,
+      DIGITKOM_ADMIN_IMAGES.img3,
+      DIGITKOM_ADMIN_IMAGES.img4,
+      DIGITKOM_ADMIN_IMAGES.img5,
+      DIGITKOM_ADMIN_IMAGES.img6,
+      DIGITKOM_ADMIN_IMAGES.img7,
+      DIGITKOM_ADMIN_IMAGES.img8,
+    ],
+    title: "DigitKom Admin Platform",
+    description:
+      "A robust, real-time management platform for CRM, production workflows, and financial tracking.",
+    details: {
+      overview:
+        "DigitKom Admin is an all-in-one agency management system. it handles the entire client lifecycle—from prospect tracking to production delivery and financial reporting—using a multi-role architecture.",
+      features: [
+        {
+          name: "CRM Suite: Full funnel tracking with interaction logs and automated follow-up reminders",
+        },
+        {
+          name: "Production Workflow: Multi-stage approval process (SMM & Design) with Asset Management integration",
+        },
+        {
+          name: "Contract Management: Lifecycle tracking for SMM, Web, and Design services with deliverable quotas",
+        },
+        {
+          name: "Financial Engine: Payment lifecycle tracking against contracts with fee and discount management",
+        },
+        {
+          name: "Security: Role-based access control (RBAC) with secure identity management via Clerk",
+        },
+      ],
+    },
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "TypeScript", icon: <BiLogoTypescript /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Shadcn UI", icon: <SiShadcnui /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "Clerk Auth" },
+      { name: "React Hook Form" },
+    ],
+  },
+  {
+    images: [
+      DIGITKOM_LANDING_IMAGES.main,
+      DIGITKOM_LANDING_IMAGES.sec,
+      DIGITKOM_LANDING_IMAGES.third,
+      DIGITKOM_LANDING_IMAGES.fourth,
+      DIGITKOM_LANDING_IMAGES.fifth,
+      DIGITKOM_LANDING_IMAGES.sixth,
+    ],
+    title: "Digitkom",
+    description:
+      "A high-performance digital storefront for a premium marketing agency with sophisticated animations.",
+    details: {
+      overview:
+        "Digitkom is a state-of-the-art web application serving as the primary touchpoint for a marketing agency. It features a custom design system with glassmorphism, seamless page transitions, and a conversion-focused ecosystem.",
+      features: [
+        {
+          name: "Service Ecosystem: Dedicated deep-dive pages for SMM, Media Buying, Design, and Web Dev",
+        },
+        {
+          name: "Modern UI/UX: Custom 'ModernHeader' with adaptive blur effects and full responsiveness",
+        },
+        {
+          name: "Content Hub: Built-in blog system for sharing industry insights and updates",
+        },
+        {
+          name: "Conversion Flows: Integrated contact and careers streams to drive business growth",
+        },
+        {
+          name: "Type-Safe Infrastructure: Robust technical foundation using Next.js 15 and TypeScript",
+        },
+      ],
+    },
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "TypeScript", icon: <BiLogoTypescript /> },
+      { name: "Tailwind CSS 4", icon: <SiTailwindcss /> },
+      { name: "Shadcn UI", icon: <SiShadcnui /> },
+      { name: "Framer Motion" },
+      { name: "Zod" },
+      { name: "Resend" },
+    ],
+  },
   {
     images: [
       SHLADTY_IMAGES.linktree,
